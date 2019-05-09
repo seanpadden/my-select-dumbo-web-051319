@@ -3,10 +3,10 @@ def my_select(number)
   selector = []
   
   while i < number.length 
-    if yield(number[i]) == true 
-      selector.push(number[i])
+    if yield(number[i]) 
+      selector << number[i]
     end
-          i += 1
+      i += 1
   end
   selector 
 end 
